@@ -511,6 +511,12 @@ section {
   position: relative;
 }
 
+.col-counts{
+	display: flex!important;
+	justify-content: center!important;
+	align-items: center!important;
+  }
+
 .counts::before {
   content: "";
   position: absolute;

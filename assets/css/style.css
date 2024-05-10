@@ -387,19 +387,25 @@ h6 {
 	height: 40vh;
 	overflow: hidden;
 	margin-top: 65px;
-  }
+}
 
-  .slide {
+.slide {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
-  }
+}
 
-  .active {
+.slide img {
+	width: 100%;
+	height: auto;
+}
+
+.active {
 	opacity: 1;
-  }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -465,6 +471,7 @@ section {
 
 .bootstrap-div .content p {
 	margin-bottom: 0;
+	text-align: justify!important;
 }
 
 .bootstrap-div .container {
@@ -501,14 +508,36 @@ section {
     }
 }
 
+@media (max-width: 767px) {
+    .div_image_lg {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .div_image_sm {
+        display: none;
+    }
+}
+
+
+.div_image_lg{
+	background-size: cover;
+	background-position: center;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: url("../img/slide_1.jpg") center center no-repeat;
+  background: url("../img/42\ \(2\).jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
+  /* height: 50vh; */
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
 }
 
 .col-counts{
